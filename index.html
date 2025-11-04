@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <title>Portfolio and poetry</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="aquarium.html">Aquarium</a>
+          </li>
+          <li>
+            <a class="header__link" href="flex_fox.html">Fox</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+              </svg>
+              
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+        </svg>
+        
+      </button>
+    </nav>
+    </header>
+    <!-- Mobile naviagtion -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+          </button>
+        </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of mobile navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/PortPhoto.jpg" alt="Profile picture">
+        <h2 class="hero__subtitle">Hello, I'm Anatoly😈</h2>
+        <h1 class="hero__title">FRONT-END<br>WEB DEVELOPER.</h1>
+        <p class="hero__description">A novice <strong>Frontend</strong> web developer and <strong>UI/UX</strong> designer.</p>
+        <a class="hero__btn btn" href="#">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">Hello! I'm Tolya, a beginner <strong>Frontend</strong> web developer from Saint Petersburg. I enjoy practicing in web development, and I also write poetry.</p>
+          <p class="about__description">People who know me say I'm too obsessed with it. But I'm in love with it.</p>
+          <p class="about__description">I also have a Telegram channel called <a href="https://t.me/blueHedgehoq" target="_blank">Hedgehog melancholy</a> where I share art and my poetry.</p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">JavaScript</li>
+              <li class="about__list">ReactJs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img lazy loading" 
+            src="https://fakeimg.pl/1280" 
+            data-src="/about.jpg" 
+            alt="Profile picture"
+          />
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured things</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Breeds of kittens</h2>
+          <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+          </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          There should be a description of the main project, but I don't have it.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">Pinterest</li>
+              <!-- <li class="featured__info">ReactJS</li>
+              <li class="featured__info">React-hook-form</li>
+              <li class="featured__info">NextJS</li>
+              <li class="featured__info">Axios</li>
+              <li class="featured__info">Supabase</li>
+              <li class="featured__info">Stripe</li> -->
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+              <p class="featured__info">Frontend</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">May 2005 - infinity</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+            class="lazy loading" 
+            src="https://fakeimg.pl/564x317" 
+            data-src="/Cat_1.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/564x317"  
+            data-src="/Cat_2.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/564x317"  
+            data-src="/Cat_3.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy" 
+            src="https://fakeimg.pl/564x317" 
+            data-src="/Cat_4.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/564x317" 
+            data-src="/Cat_5.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/564x317"  
+            data-src="/Cat_6.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/564x317"  
+            data-src="/Cat_7.jpg" 
+            alt="Breeds of kittens">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/564x317"  
+            data-src="/Cat_8.jpg" 
+            alt="Breeds of kittens">
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Poetry</h2>
+        <p class="work__description">
+          Below are excerpts from my poems.
+        </p>
+        <div class="work__container">
+          <!-- Poetry 1 -->
+          <h3 class="work__project-title">I'm afraid</h3>
+          <div class="work__img-wrapper work__image1">
+            <img class="lazy loading"
+              src="https://fakeimg.pl/1000" 
+              data-src="/Боюсь.jpg"
+              alt="I'm afraid poetry">
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">I'm afraid</h3>
+            <p class="work__project-description1">Poem about my fears</p>
+            <p p class="work__project-description2">
+              Боюсь остаться без воспоминаний, <br>
+              Боюсь проснуться в холодном поту.<br>
+              Боюсь нелюбимых прикосновений,<br>
+              Боюсь потерять теплоту.<br>
+              <br>
+              Боюсь одиночества,<br>
+              Боюсь сближения.<br>
+              Боюсь непринятого сообщества,<br>
+              Боюсь молчаливого наблюдения...
+            </p>
+            <a class="btn work__project-button" href="https://t.me/blueHedgehoq/42" target="_blank">Poetry</a>
+          </div>
+          <!-- Poetry 2 -->
+          <h3 class="work__project-title">Life</h3>
+          <div class="work__img-wrapper work__image2">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/1000"
+            data-src="/Жизнь.jpg" 
+            alt="Life poetry">
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Life</h3>
+            <p class="work__project-description1">Confession about life</p>
+            <p class="work__project-description2">
+              Всё существование жизнь пугает смертью,<br>
+              Забирая надежду из крепкой хватки.<br>
+              Голося на ухо: "лицемерьте",<br>
+              Оставляет на шее отпечатки.<br>
+              <br>
+              Утопление котят домашним полотенцем,<br>
+              Возвращает в бездушное детство.<br>
+              Будто я был безликим младенцем,<br>
+              Который не вспомнит страданья...
+            </p>
+            <a class="btn work__project-button" href="https://t.me/blueHedgehoq/22" target="_blank">Poetry</a>
+          </div>
+          <!-- Poetry 3 -->
+          <h3 class="work__project-title">You know, love</h3>
+          <div class="work__img-wrapper work__image3">
+            <img class="lazy loading"
+              src="https://fakeimg.pl/1000"
+              data-src="/Знаешь любовь.jpg"
+              alt="You know, love poetry">
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">You know, love</h3>
+            <p class="work__project-description1">My declaration of love</p>
+            <p class="work__project-description2">
+              Знаешь, какая разница,<br>
+              Если у меня бессонница.<br>
+              Я упал в твою любовь,<br>
+              Но не успел опомниться <br>
+              <br>
+              Расписал на ста листах <br>
+              Почему ты сто из ста.<br>
+              Листы закончились увы,<br>
+              В ход пошли стены и холсты...
+            </p>
+            <a class="btn work__project-button" href="https://t.me/blueHedgehoq/17" target="_blank">Poetry</a>
+          </div>
+  
+          <!-- Poetry 4 -->
+          <h3 class="work__project-title">You've become a muse to me</h3>
+          <div class="work__img-wrapper  work__image4">
+            <img class="lazy loading"
+              src="https://fakeimg.pl/1000"
+              data-src="/Для меня ты стала музой.jpg"
+              alt="You've become a muse to me. poetry">
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">You've become a muse to me</h3>
+            <p class="work__project-description1">About the unattainable muse</p>
+            <p p class="work__project-description2">
+              Для меня ты стала музой,<br>
+              Как для Пушкина Гончарова - Мадонной.<br>
+              Строим свои невинные узы<br>
+              Моя любовь к тебе станет эталонной.<br>
+              <br>
+              Восхищение, восторг.<br>
+              Стихи, комплименты.<br>
+              Таких чувств я никогда бы не отторг,<br>
+              Собираем любовь как пазл - фрагменты...
+            </p>
+            <a class="btn work__project-button" href="https://t.me/blueHedgehoq/25" target="_blank">Poetry</a>
+          </div>
+          <!-- Poetry 5 -->
+          <h3 class="work__project-title">Anxiety</h3>
+          <div class="work__img-wrapper work__image5">
+            <img class="lazy loading"
+            src="https://fakeimg.pl/1000" 
+            data-src="/Тревога.jpg" 
+            alt="Anxiety poetry">
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Anxiety</h3>
+            <p class="work__project-description1">Reflection on loneliness and anxiety</p>
+            <p class="work__project-description2">
+              Сижу, дома в соло, скукота.<br>
+              Ночью греет только тревога.<br>
+              В моей душе мерзлота,<br>
+              Она не пережила поджога.<br>
+              <br>
+              Любовь к слезам.<br>
+              Обыденность бытовых переживаний.<br>
+              Не хватает ярости социальным ртам,<br>
+              Пугает неизбежность задержаний...
+            </p>
+            <a class="btn work__project-button" href="https://t.me/blueHedgehoq/27" target="_blank">Poetry</a>
+          </div>
+          <!-- Poetry 6 -->
+          <h3 class="work__project-title">Over the abyss of lies</h3>
+          <div class="work__img-wrapper work__image6">
+            <img class="lazy loading"
+              src="https://fakeimg.pl/1000"
+              data-src="/Над пропастью во лжи.jpg" 
+              alt="Over the abyss of lies poetry">
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">Over the abyss of lies</h3>
+            <p class="work__project-description1">Reflections on periods of my life</p>
+            <p class="work__project-description2">
+              Безразличие, апатия.<br>
+              Надежда существования выхода.<br>
+              Меняемся мыслями, будто телепатия,<br>
+              Обращаемся к друг другу ради прихотей.<br>
+              <br>
+              Грусть, уныние.<br>
+              Мысли о тяжёлом будущем.<br>
+              Смерть в сердце всё глубиннее,<br>
+              Держу в объятиях тоску продутую...
+            </p>
+            <a class="btn work__project-button" href="https://t.me/blueHedgehoq/24" target="_blank">Poetry</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Whether you are starting a project, need an intern, or just want to say hello, my inbox is always open, so feel free to contact me and I get back to you as soon as possible.
+        </p>
+        <a class="contact__btn btn" href="mailto::krechetnikov.ag@gmail.com" target="_blank">React Out</a>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Anatoly Krechetnikov~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
