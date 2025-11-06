@@ -103,8 +103,6 @@
     border-radius: var(--radius-md);
     width: 20%;
     padding: 12px 20px;
-    /* display: flex; */
-    /* flex-direction: column;  */
     justify-content: center;
     align-items: center;
     cursor: pointer;
