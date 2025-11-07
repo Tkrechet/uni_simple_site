@@ -139,10 +139,10 @@ const questions = [
     allQuestions.forEach((block, index) => {
       const q = questions[index];
       block.addEventListener("click", () => {
-        // Удаляем все открытые ответы
+
         document.querySelectorAll(".review-explanation").forEach(el => el.remove());
   
-        // Создаём блок с правильным ответом
+
         const correctAnswer = q.answers[q.correct];
         const reviewDiv = document.createElement("div");
         reviewDiv.className = "review-explanation";
